@@ -1,0 +1,17 @@
+<div class="container container-index">
+  <div class="d-flex justify-content-around flex-wrap" style="width: 100vw">
+    <% @cocktails.each do |cocktail| %>
+    <div class="card d-flex flex-grow m-1" >
+      <img >
+      <div class="card-body">
+        <h5 class="card-title"><%= cocktail.name %></h5>
+        <p class="card-text"></p>
+
+        <%= link_to "Info", cocktail_path(cocktail), class: 'btn btn-primary' %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+

@@ -1,0 +1,11 @@
+<div class="banner-new">
+  <div class="new-cocktail">
+    <div class="form-new w-75%">
+       <%= simple_form_for(@cocktail) do |f| %>
+         <%= f.input :name %>
+         <%= f.input :description %>
+         <%= f.button :submit, "Add New Cocktail", class: 'text-center btn btn-primary'%>
+        <% end %>
+    </div>
+  </div>
+</div>

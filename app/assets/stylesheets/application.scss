@@ -11,3 +11,17 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+@import "cocktails";
+
+p {
+  margin: 0;
+}
+.container {
+  width: 900px;
+  margin: 40px auto;
+  background-color: #F8F9FA;
+}
+body {
+  list-style: none;
+}

@@ -1,0 +1,33 @@
+.banner {
+  background-image: url('https://images.pexels.com/photos/572838/pexels-photo-572838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 65px);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  h1 {
+    font-size: 150px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-decoration: underline;
+    opacity: 0.9;
+  }
+}
+.banner .btn {
+  font-size: 20px;
+}
+
+.banner-new {
+  background-image: url("https://images.pexels.com/photos/613037/pexels-photo-613037.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 65px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}

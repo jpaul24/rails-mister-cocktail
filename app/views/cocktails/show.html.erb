@@ -1,0 +1,27 @@
+
+<div class="container">
+  <div class="show-container d-flex">
+    <div class="show-image">
+    </div>
+    <div class="show-text">
+       <h1><%= @cocktail.name %></h1>
+
+       <div>
+         <h3>Ingredients</h3>
+         <% @cocktail.doses.each do |dose| %>
+          <li>
+            <p><strong><%= dose.ingredient.name %></strong> - <%= dose.part %> (<%= link_to "delete", dose_path, method: :delete %>)</p>
+          </li>
+         <% end %>
+       </div>
+       <div>
+         <%= simple_form_for [@cocktail, @dose] do |f| %>
+           <%= f.association :ingredient %>
+           <%= f.input :part, collection: ['1 Part', '2 Part', '3 Part'] %>
+           <%= f.button :submit, "Add An Ingredient", class: 'text-center btn btn-primary'%>
+          <% end %>
+       </div>
+    </div>
+  </div>
+</div>
+
