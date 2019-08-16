@@ -4,8 +4,17 @@
        <%= simple_form_for(@cocktail) do |f| %>
          <%= f.input :name %>
          <%= f.input :description %>
+         <%= f.input :photo %>
+         <%= f.input :photo_cache, as: :hidden %>
          <%= f.button :submit, "Add New Cocktail", class: 'text-center btn btn-primary'%>
         <% end %>
     </div>
   </div>
 </div>
+
+
+https://images.pexels.com/photos/613037/pexels-photo-613037.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500
+
+https://images.pexels.com/photos/2792463/pexels-photo-2792463.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+
+https://images.pexels.com/photos/109275/pexels-photo-109275.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260

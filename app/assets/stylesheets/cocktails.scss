@@ -17,6 +17,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 20px;
 }
 .show-image {
   background-image: url("https://images.unsplash.com/photo-1481391564276-da6fcacaee31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
@@ -27,4 +28,10 @@
 }
 .container-index {
   background-color: #272822;
+}
+.typed-text {
+  margin: 30px;
+  p {
+    font-size: 30px;
+  }
 }

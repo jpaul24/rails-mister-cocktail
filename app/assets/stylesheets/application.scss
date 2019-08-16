@@ -18,10 +18,29 @@ p {
   margin: 0;
 }
 .container {
-  width: 900px;
-  margin: 40px auto;
-  background-color: #F8F9FA;
+  width: 80%;
+  padding: 50px 0;
 }
 body {
   list-style: none;
+}
+.btn-primary {
+  font-size: 20px;
+}
+.mycard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 225px;
+  width: 350px;
+  border-radius: 5px;
+  border: 1px solid #ccc!important;
+}
+
+.hello {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

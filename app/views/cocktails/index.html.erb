@@ -1,17 +1,24 @@
-<div class="container container-index">
-  <div class="d-flex justify-content-around flex-wrap" style="width: 100vw">
-    <% @cocktails.each do |cocktail| %>
-    <div class="card d-flex flex-grow m-1" >
-      <img >
-      <div class="card-body">
-        <h5 class="card-title"><%= cocktail.name %></h5>
-        <p class="card-text"></p>
+<div class="index-bg">
+  <div class="container">
+    <div class="row">
 
-        <%= link_to "Info", cocktail_path(cocktail), class: 'btn btn-primary' %>
+      <% @cocktails.each do |cocktail| %>
+      <div class="col-sm-4">
+        <p><%= link_to "Remove", cocktail_path(cocktail), method: :delete %></p>
+        <%= link_to cocktail_path(cocktail) do %>
+          <div class="flip">
+            <div class="front" style="background-image: url('<%= cocktail.photo %>');">
+            </div>
+            <div class="back">
+               <h2><%= cocktail.name %></h2>
+               <p><%= cocktail.description %></p>
+            </div>
+          </div>
+        <% end %>
       </div>
+      <% end %>
     </div>
-    <% end %>
   </div>
 </div>
 
-
+<!-- link_to "View Cocktail", cocktail_path(cocktail), class: 'btn btn-primary' -->

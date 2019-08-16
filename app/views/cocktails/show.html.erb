@@ -1,10 +1,11 @@
-
 <div class="container">
   <div class="show-container d-flex">
     <div class="show-image">
     </div>
+
     <div class="show-text">
        <h1><%= @cocktail.name %></h1>
+
 
        <div>
          <h3>Ingredients</h3>
@@ -12,6 +13,7 @@
           <li>
             <p><strong><%= dose.ingredient.name %></strong> - <%= dose.part %> (<%= link_to "delete", dose_path(dose), method: :delete %>)</p>
           </li>
+
          <% end %>
        </div>
        <div>
@@ -24,4 +26,5 @@
     </div>
   </div>
 </div>
+
 
